@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Lobster+Two&display=swap');
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.left {
+    left: 0;
+    background: url(bg1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.right {
+    right: 0;
+    background: url(bg2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.centered img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+h1 {
+    margin-top: 170px;
+    margin-left: 150px;
+    align-items: center;
+    font-family: 'Lobster Two', cursive;
+    font-size: 60px;
+}
+
+h2 {
+    margin-left: 200px;
+    margin-top: -40px;
+    align-items: center;
+    font-family: 'Lobster Two', cursive;
+    font-size: 40px;
+}
+
+.box {
+    margin-top: 220px;
+    border-radius: 25px;
+    padding: 30px 20px;
+    border-width: 3px;
+    border-color: black;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.name {
+    font-size: 3rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: left;
+    transform: translateY(10%) translateX(10%);
+    position: absolute;
+    margin-left: 150px;
+    z-index: 1;
+}
+
+.logo {
+    width: 180px;
+    cursor: pointer;
+    z-index: 1;
+    margin-left: 515px;
+}
+
+.navbar {
+    z-index: 1;
+    width: 85%;
+    font-size: 1.2rem;
+    margin: auto;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.inputBox {
+    margin-top: 50px;
+    margin-left: 250px;
+    border-radius: 25px;
+    padding: 30px 20px;
+    border-width: 3px;
+    border-color: black;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.link {
+    opacity: 0.75;
+    width: 380px;
+    height: 35px;
+    margin-top: 50px;
+    margin-left: 150px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    border-width: 3px;
+    border-color: black;
+    font-size: 18px;
+    font-weight: 800;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.link1 {
+    opacity: 0.75;
+    width: 140px;
+    height: 24px;
+    margin-top: 30px;
+    margin-left: 150px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    border-width: 3px;
+    border-color: black;
+    font-size: 18px;
+    font-weight: 800;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.bt {
+    width: 150px;
+    margin-top: 40px;
+    margin-left: 75px;
+    padding: 7px 3px;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 3px solid #136853;
+    cursor: pointer;
+    color: black;
+    background: transparent;
+    position: relative;
+}
+
+.bt:hover {
+    transition: 0.5s;
+    margin-top: 40px;
+    margin-left: 75px;
+    width: 150px;
+    padding: 7px 3px;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 3px solid #136853;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background: #1895a5;
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    margin-top: -150px;
+    margin-left: -30px;
+}
+
+.es {
+    font-weight: bold;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: white
+}
+
+.box {
+    width: 200px;
+    height: 10px;
+    transition-duration: 0.9s;
+    transition-property: width;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    display: flex;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container:hover .box {
+    width: 270px;
+    background: rgb(129, 19, 105);
+    transition: 2s;
+    color: white;
+    font-size: 22px;
+    border-radius: 30px;
+}
+
+.one {
+    background: transparent;
+    border: rgb(61, 2, 78) solid 3px;
+    transition-timing-function: linear;
+}
