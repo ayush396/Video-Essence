@@ -1,39 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video Essence</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{url_for('static',filename='index.css')}}">
+    <link rel="shortcut icon" href="{{url_for('static',filename='logo1.ico')}}">
 </head>
+
 <body>
     <div class="navbar">
-        <img src="logo1.png" class="logo">
-        <p class="name"><span class="ups">Video Essence</span> </p>
+        <img src="{{url_for('static',filename='logo1.png')}}" class="logo">
 
-        
+
+
     </div>
     <div class="split left">
-        
+
         <h1>Video Transcript </h1>
         <h2>Summarizer</h2>
-            <form action="/convert" method="GET">
-                 <input class="link" type="text" placeholder='Enter URL' required name='url'>
-                 <input class="bt" type="submit" value="Submit">
-             </form>
+        <form action="/convert" method="GET">
+            <input class="link" type="text" placeholder='Enter URL' required name='url'>
+            <input class="link1" type="text" placeholder='Number of Lines' required name='lines'>
+            <input class="bt" type="submit" value="Submit">
+        </form>
         <div class="centered"></div>
     </div>
-      
-      <div class="split right">
-        <form >
+
+    <div class="split right">
+        <form>
             <h1>Textual Content </h1>
             <h2>Summarizer</h2>
             <div class="inputBox">
-              <button class="abc" type="button" name="button">continue </button>  
+                <div class="container">
+                    <div class="box one"> <span class='es'> <a href="/text" style='text-decoration:none;'>Proceed to Continue</a>  </span> </div>
+
+                </div>
             </div>
         </form>
-      </div>
-    
+    </div>
+
 </body>
+
 </html>
