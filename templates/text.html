@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <title>Textual Content</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    <link rel="shortcut icon" href="{{url_for('static',filename='logo1.ico')}}">
+</head>
+
+<body>
+    <div class="navbar">
+        <img src="{{url_for('static',filename='logo1.png')}}" class="logo">
+        <p class="name"><span class="ups">Video Essence</span> </p>
+    </div>
+
+
+    <div class="split left">
+
+        <h2 class="txt">Enter the text below</h2>
+        <form action="/process" method="POST">
+            <textarea class="inBox" name="input" cols="50" rows="10" placeholder='Enter Text Here' required></textarea>
+            <p class="es">Length of summary you want:</p>
+            <input class='link1' type="text" placeholder="Number of lines" name="no">
+            <input class="bt" type="submit" value="Submit">
+        </form>
+        <div class="centered"></div>
+    </div>
+
+    <div class="split right">
+        <form>
+            <h2 class="txt2">Output</h2>
+            <div class="outBox">
+                <textarea class="out" id="outputText" rows=10 cols=50 wrap=on readonly> 
+
+                </textarea>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
