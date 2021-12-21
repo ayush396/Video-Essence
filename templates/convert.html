@@ -1,35 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Summary</title>
-    <link rel="stylesheet" href="summarize.css">
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    <link rel="shortcut icon" href="{{url_for('static',filename='logo1.ico')}}">
 </head>
+
 <body>
     <div class="navbar">
-        <img src="logo1.png" class="logo">
+        <img src="{{url_for('static',filename='logo1.png')}}" class="logo">
         <p class="name"><span class="ups">Video Essence</span> </p>
-
-        
     </div>
     <div class="split left">
-        
-        <h1>Video!!</h1>
-        <div class="centered">
-        </div>
-      </div>
-      
-      <div class="split right">
-        
-          <h1>Summarized</h1>
-          <h2>Transcript</h2>
-        <div class="centered">
-            <textarea class="box" id="outputText" rows=12 cols=50 wrap=on readonly> Machine learning (ML) is the study of computer algorithms that can improve automatically through experience and by the use of data.[1] It is seen as a part of artificial intelligence. Machine learning algorithms build a model based on sample data, known as training data, in order to make predictions or decisions without being explicitly programmed to do so.[2] Machine learning algorithms are used in a wide variety of applications, such as in medicine, email filtering, speech recognition, and computer vision, where it is difficult or unfeasible to develop conventional algorithms to perform the needed tasks.[3]
 
-                </textarea>
+        <h1 style='font-size:50px; margin-top:175px; color: #3a0363'>Here's what we got from you!!</h1>
+        <div class="centered eg">
+            <iframe width="620" height="400" src={{video}} style="border-radius:25px; margin-left:100px"></iframe>
         </div>
-      </div>
+        <div class="centered">
+        </div>
+    </div>
+
+    <div class="split right">
+
+        <h1 style='margin-left:100px; color: #3a0363'>Summarized</h1>
+        <h2 style='margin-left:100px; color: #3a0363'>Transcript</h2>
+        <div class="centered">
+            <textarea class="box" id="outputText" rows=12 cols=50 wrap=on readonly>{{ans}}</textarea>
+        </div>
+    </div>
 </body>
+
 </html>
