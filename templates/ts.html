@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Summarizer</title>
+    <link rel="stylesheet" href="summarize.css">
+</head>
+<body>
+    <div class="nvbar">
+        <img src="logo1.png" class="logo">
+        <p class="ve"><span class="ups">Video Essence</span> </p>
+        <h1>Text Summarizer</h1>
+
+        
+    </div>
+    <div class="split left">
+        
+        <h2 class="txt">Enter the text below</h2>
+            <form action="/convert" method="GET">
+                 <textarea class="inBox" name="input"  cols="50" rows="10"></textarea>
+                 <input class="bt"type="submit" value="Submit">
+             </form>
+        <div class="centered"></div>
+    </div>
+      
+      <div class="split right">
+        <form >
+            <h2 class="txt2">Output</h2>
+            <div class="outBox">
+                <textarea class="out" id="outputText" rows=10 cols=50 wrap=on readonly> Machine learning (ML) is the study of computer algorithms that can improve automatically through experience and by the use of data.[1] It is seen as a part of artificial intelligence. Machine learning algorithms build a model based on sample data, known as training data, in order to make predictions or decisions without being explicitly programmed to do so.[2] Machine learning algorithms are used in a wide variety of applications, such as in medicine, email filtering, speech recognition, and computer vision, where it is difficult or unfeasible to develop conventional algorithms to perform the needed tasks.[3]
+
+                </textarea> 
+            </div>
+        </form>
+      </div>
+    
+</body>
+</html>
+
+.txt{
+    margin-top: 150px;
+    margin-left: 300px;
+  
+  }
+  
+  .txt2{
+    margin-top: 150px;
+    margin-left: 200px;
+  }
+  
+  .nvbar{
+    margin-top: 10px;
+  }
+  
+  .outBox{
+    margin-top: 50px;
+    margin-left: 10px;
+  
+  }
+  
+  .out{
+    margin-top: 5px;
+    border-radius: 25px;
+    padding: 30px 20px;
+    border-width: 3px;
+    border-color: black;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .inBox{
+    margin-left: 150px;
+    margin-top: 20px;
+    border-radius: 25px;
+    padding: 30px 20px;
+    border-width: 3px;
+    border-color: black;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .bt{
+    width: 150px;
+    margin-top: 40px;
+    margin-left: 580px;
+    padding: 7px 3px;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 25px;
+    font-weight: bold ;
+    border: 3px solid #c42bc4;
+    cursor: pointer;
+    color: black;
+    background: transparent;
+    position: relative;
+    
+  }
+  
+  .bt:hover{
+    transition: 0.5s;
+  
+    margin-top: 40px;
+    margin-left: 580px;
+    width: 150px;
+    padding: 7px 3px;
+    text-align: center;
+    font-size: 25px;
+  
+    border-radius: 25px;
+    font-weight: bold ;
+    border: 3px solid #c42bc4 ;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background: #e228ba ;
+    position: relative;
+    overflow: hidden;
+    
+  }
